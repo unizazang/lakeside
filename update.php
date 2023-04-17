@@ -1,6 +1,6 @@
 <?php
     require_once("php/config.php");
-    $idx = $_GET{'idx'};
+    $idx = $_GET['idx'];
     $sql = "SELECT * FROM lake_bbs WHERE idx = '$idx'";
     $result = mysqli_query($connect, $sql);
 ?>
