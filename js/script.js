@@ -2,13 +2,7 @@
 let topBtn = $("#go-top");
 
 $(window).on("scroll", function () {
-  let scrAmt = $(this).scrollTop();
-
-  if (scrAmt > 900) {
-    topBtn.fadeIn();
-  } else {
-    topBtn.fadeOut();
-  }
+  btnFade(topBtn, 900);
 });
 
 topBtn.on("click", function (e) {
@@ -268,7 +262,7 @@ $.getJSON(
       Temp.map((item) => {
         TempArr.push(item.main.temp);
         console.log(item.dt.substr(-8) == "21:00:00");
-        let confirm = item.dt.substr(-8) == "21:00:00";
+        let confirm = item.dt.substr(-8) == "18:00:00";
         if (confirm == true) {
           iconArr.push(item.weather[0].icon);
         }
@@ -324,7 +318,7 @@ $.getJSON(
 
     //preview - date
     let previewDateBox = $(".today_date");
-    let previewDateHTML = `<div class="d-flex justify-content-center "><p>${newDate.getDate()}</p><p>(${
+    let previewDateHTML = `<div class="d-flex justify-content-center "><p>0${newDate.getDate()}</p><p>(${
       korWeek[day]
     })</p></div>`;
     previewDateBox.html(previewDateHTML);
