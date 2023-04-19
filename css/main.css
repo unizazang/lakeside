@@ -580,7 +580,7 @@ footer .notice-slide {
   font-weight: 700;
   font-size: var(--small-content-fz);
   border: 2px solid var(--primary-green);
-  margin: 10px 0;
+  margin: 15px 0;
   transition: background 0.3s, color 0.3s ease-in;
 }
 
