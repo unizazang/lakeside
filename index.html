@@ -60,46 +60,73 @@
         본 웹사이트는 구직용 포트폴리오 사이트로서 실제 lakeside와는 관계가
         없습니다. 이미지와 내용의 저작권은 lakeside에 있습니다.
       </h2>
+      <h2 class="pop-desc">
+        ※ 원활한 화면구현을 위해 최신 브라우저를 사용해주세요.
+      </h2>
+      <h2 class="pop-desc">
+        ※ 과정 중기 작품으로 반응형, css 변수, 함수 등 중급문법을 활용했습니다.
+      </h2>
+      <h2>
+        <a
+          href="https://github.com/unizazang/lakeside"
+          class="popup-git"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i> 깃허브 바로가기</a
+        >
+      </h2>
 
       <h2>제작기간 : 2022.12.28 ~ 2023. 02.10</h2>
       <div class="popup-pages">
         <h2>구현 완료 페이지:</h2>
-        <a href="index.html">메인</a>
-        <a href="notice.html">노티스</a>
+        <a href="index.html" class="yoon">메인</a>
+        <a href="notice.html" class="yoon">노티스</a>
         <a href="course.html">코스</a>
         <a href="login.php">로그인</a>
         <a href="board.php">게시판</a>
         <a href="book.php">예약</a>
       </div>
-      <h2>주요 사용 언어 :</h2>
-      <h3>HTML, CSS, Javascript, PHP</h3>
-      <h2>주요 사용 테크닉 :</h2>
-      <h3>JQuery, JQuery libraries, Flex</h3>
-      <h2>제작 팀원 :</h2>
-      <h3>문*닮, 이*희, 유*은, 윤*혁</h3>
-      <ul>
-        <li>
-          <h2>기획 : 문*닮 50%, 이*희 25%, 윤*혁 25%</h2>
-        </li>
-        <li>
-          <h2>디자인 : 유*은 100%</h2>
-        </li>
-        <li>
-          구현:
-          <ul>
-            <li><h2>이*희 - 메인, 노티스, 배너, 푸터, aside nav</h2></li>
-            <li><h2>문*닮 - 코스, 위젯, 메뉴</h2></li>
-            <li><h2>윤*혁 - 로그인, 게시판, 예약</h2></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="pop-desc-wrap">
+        <h2>주요 사용 언어 : <span>HTML, CSS, Javascript, PHP</span></h2>
+        <h2>주요 사용 테크닉 : <span>JQuery, JQuery libraries, Flex</span></h2>
+      </div>
+      <div class="pop-desc-wrap">
+        <h2>
+          제작 팀원 : 문*닮, <span class="yoon">이윤희</span>, 유*은, 윤*혁
+        </h2>
+        <ul>
+          <li>
+            <h2>
+              기획 : 문*닮 50%, <span class="yoon">이윤희</span> 25%, 윤*혁 25%
+            </h2>
+          </li>
+          <li>
+            <h2>디자인 : 유*은 100%</h2>
+          </li>
+          <li class="coding">
+            구현:
+            <ul>
+              <li>
+                <h2>
+                  <span class="yoon"
+                    >이윤희 - 메인, 노티스, 배너, 푸터, pager</span
+                  >
+                </h2>
+              </li>
+              <li><h3>문*닮 - 코스, 위젯, 메뉴</h3></li>
+              <li><h3>윤*혁 - 로그인, 게시판, 예약</h3></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <button
         class="popup-close d-flex justify-content-center align-items-center"
       >
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <label for="dont-see">오늘 하루 보지 않기</label>
-      <input id="dont-see" type="checkbox" />
+      <div class="cookie">
+        <label for="dont-see">오늘 하루 보지 않기</label>
+        <input id="dont-see" type="checkbox" />
+      </div>
     </dialog>
     <!-- </dialog> -->
     <header class="text-center">
